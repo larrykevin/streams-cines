@@ -111,6 +111,11 @@ function printStreams(e) {
             max-height: 80%;
             place-self: center;
         }
+        .streams img:active {
+            -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            box-shadow: 0 0 0 2px #030c16;
+        }
         .result-month {
             text-align: center;
         }
@@ -159,6 +164,26 @@ function printStreams(e) {
               -webkit-transform: translateX(0);
                       transform: translateX(0);
               opacity: 1;
+            }
+          }
+          @-webkit-keyframes slide-top {
+            0% {
+              -webkit-transform: translateY(0);
+                      transform: translateY(0);
+            }
+            100% {
+              -webkit-transform: translateY(-10px);
+                      transform: translateY(-10px);
+            }
+          }
+          @keyframes slide-top {
+            0% {
+              -webkit-transform: translateY(0);
+                      transform: translateY(0);
+            }
+            100% {
+              -webkit-transform: translateY(-10px);
+                      transform: translateY(-10px);
             }
           }
     `;
