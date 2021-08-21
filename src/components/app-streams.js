@@ -64,30 +64,33 @@ function printStreams(e) {
 	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
         }
         .streams {
+            max-height: 250px;
             display: grid;
             justify-content: center;
             grid-template-columns: minmax(50px, 120px) minmax(50px, 120px) minmax(50px, 120px);
             grid-template-rows: minmax(50px, 120px) minmax(50px, 120px);
             grid-gap: 8px;
-            padding: 0 16px
+            padding: 0 16px;
         }
         header {
-            padding-top: 56px;
+            padding-top: 40px;
             text-align: center;
         }
         header img {
-            height: 10rem;
+            height: 8rem;
         }
         h1 {
             font-weight: normal;
-            margin: 20px auto 0;
+            margin: 12px auto 0;
             font-size: 3.2rem;
+            line-height: 3.2rem;
             max-width: 260px;
         }
         h2 {
             font-weight: normal;
             margin: 10px auto 0;
             font-size: 4.8rem;
+            line-height: 4.8rem;
             max-width: 260px;
             color: #00A890;
         }
@@ -104,6 +107,8 @@ function printStreams(e) {
             padding: 16px;
             border: 0.2rem solid #22364C;
             border-radius: 6px;
+            height: fill-available;
+            width: fill-available;
             height: -webkit-fill-available;
             width: -webkit-fill-available;
         }
