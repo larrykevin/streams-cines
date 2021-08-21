@@ -103,7 +103,6 @@ function printStreams(e) {
             text-align: center;
         }
         .streams img {
-            padding: 12px 6px;
             border: 0.2rem solid #22364C;
             border-radius: 6px;
             min-width: 50px;
@@ -111,11 +110,6 @@ function printStreams(e) {
             max-width: 80%;
             max-height: 80%;
             place-self: center;
-        }
-        .streams img:nth-of-type(2),
-        .streams img:nth-of-type(3),
-        .streams img:nth-of-type(5) {
-            padding: 12px 6px;
         }
         .result-month {
             text-align: center;
@@ -235,8 +229,8 @@ function containerStreams() {
             <p>Escoge que plataforma de streaming sería tu favorito</p>
         </div>
         <div class="streams">
-            <img src="../src/assets/netflix.svg" alt="logo de Netflix" brand="" price=""/>
-            <img src="../src/assets/disney.svg" alt="logo de Disney" brand="" price=""/>
+            <img src="../src/assets/netflix.svg" alt="logo de Netflix"/>
+            <img src="../src/assets/disney.svg" alt="logo de Disney"/>
             <img src="../src/assets/prime.svg" alt="logo de Prime"/>
             <img src="../src/assets/hbo.svg" alt="logo de HBO"/>
             <img src="../src/assets/paramount.svg" alt="logo de Paramount"/>
