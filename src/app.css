@@ -100,7 +100,7 @@ select::-ms-expand {
 
 .container {
     height: 100%;
-    margin-top: 20%;
+    margin-top: 80px;
 }
 .header {
     padding-top: 56px;
@@ -156,4 +156,10 @@ select::-ms-expand {
     border-radius: 6px;
     background: #00a890;
     border: none;
+}
+
+@media (min-width: 600px) {
+    .container {
+        margin-top: 180px;
+    }
 }
