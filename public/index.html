@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniApp Cine vs Streamings</title>
+    <link rel="stylesheet" href="../src/app.css">
+</head>
+<body>
+    <main>
+        <section id="container" class="container">
+            <section id="container-home">
+                <header class="header">
+                    <img
+                        alt="imagen de nuestra mini-app"
+                        src="../src/assets/popcorn.svg"
+                    />
+                    <h1>¿Al cine o me quedo en casa?</h1>
+                </header>
+                <label for="inputName">
+                    <span>¿Cuál es tu nombre?</span>
+                    <input
+                        id="inputName"
+                        placeholder="Ingresa tu nombre"
+                        required
+                        type="text"
+                    />
+                </label>
+                <section class="quest">
+                    <p>¿Cuántas series y/o películas ves al mes?</p>
+                    <section>
+                        <div class="custom-select">
+                            <select name="movies" id="moviesInput">
+                                <option value="null" >--</option>
+                                <option value="1" >1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">+10</option>
+                            </select>
+                            <span>Películas</span>
+                        </div>
+                        <div class="custom-select">
+                            <select name="series" id="seriesInput">
+                                <option value="null" >--</option>
+                                <option value="1" >1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">+10</option>
+                            </select>
+                            <span>Series</span>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="button">
+            <button id="buttonHome" class="button-home">
+                <span class="button__next"></span>
+            </button>
+            <button id="buttonStreams" class="button-streams">
+                <span class="button__next"></span>
+            </button>
+            <button id="buttonResult" class="button-result">
+                ¿Elegir otro streaming?
+            </button>
+        </section>
+    </main>
+
+    <script type="module" src="../src/components/app-streams.js"></script>
+</body>
+</html>
