@@ -64,7 +64,6 @@ function printStreams(e) {
 	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
         }
         .streams {
-            max-height: 250px;
             display: grid;
             justify-content: center;
             grid-template-columns: minmax(50px, 120px) minmax(50px, 120px) minmax(50px, 120px);
@@ -104,13 +103,14 @@ function printStreams(e) {
             text-align: center;
         }
         .streams img {
-            padding: 16px;
+            padding: 12px 6px;
             border: 0.2rem solid #22364C;
             border-radius: 6px;
-            height: fill-available;
-            width: fill-available;
-            height: -webkit-fill-available;
-            width: -webkit-fill-available;
+            min-width: 50px;
+            min-height: 50px;
+            max-width: 80%;
+            max-height: 80%;
+            place-self: center;
         }
         .streams img:nth-of-type(2),
         .streams img:nth-of-type(3),
